@@ -8,6 +8,10 @@
     user-select: none;
 }
 
+img{
+    pointer-events: none;
+}
+
 ::-webkit-scrollbar {
     scrollbar-color: rgb(0, 197, 211) #333;
     width: 10px; /* Mostly for vertical scrollbars */
@@ -29,6 +33,7 @@ body{
 }
 
 .nav{
+    position: fixed;
     height: 100vh;
     width: 250px;
     background: linear-gradient(to right, #ff7b005d,#ff7b0091);
@@ -58,15 +63,17 @@ body{
 #content-wrapper{
     padding: 10px;
     width: 100%;
+    margin-left: 250px;
 }
 
 .post{
     flex-direction: row;
     width: 100%;
-    height: 300px;
+    height: auto;
     background: linear-gradient(to right, #b7f4ff5d,#a6fffb7c);
     border-radius: 20px;
     overflow-y: auto;
+    margin-bottom: 40px;
 }
 
 .post-content{
@@ -80,7 +87,34 @@ body{
 }
 
 .post-thumbnail{
-    height: 120px;
+    height: 160px;
     margin: 10px;
     border-radius: 6px;
+}
+
+.special-post{
+    background: linear-gradient(to right, #00ffff8e,#66ff008e);
+}
+
+@media screen and (max-width:650px) {
+    .post-thumbnail{
+        height: 50%;
+        width: 50%;
+    }
+    .post{
+        flex-direction: column;
+        height: auto;
+    }
+    .post-content{
+        flex-direction: column;
+        height: auto;
+    }
+    #content-wrapper{
+        padding: 10px;
+        width: 100%;
+        margin-left: 0;
+    }
+    .nav{
+        display: none;
+    }
 }
