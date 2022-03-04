@@ -36,7 +36,7 @@ body{
     position: fixed;
     height: 100vh;
     width: 250px;
-    background: linear-gradient(to right, #ff7b005d,#ff7b0091);
+    background: linear-gradient(to right, #ff7b00,#ff7b0091);
     border-top-right-radius: 50px;
     animation: navAnim 0.5s linear;
 }
@@ -132,11 +132,28 @@ body{
         height: auto;
     }
     #content-wrapper{
+        margin-top: 18vh;
         padding: 10px;
         width: 100%;
         margin-left: 0;
     }
     .nav{
-        display: none;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border-radius: 0;
+        height: 90px;
+        text-align: center;
+        vertical-align: middle;
+        border-bottom-right-radius: 60px;
+        background: linear-gradient(to right, #ff7b00,#ff009d);
+    }
+    p a {
+        font-size: 50px;
+    }
+    .nav-link-label:hover{
+        transition: .13s;
+        font-size: 1.5rem;
+        color: rgb(255, 0, 234);
     }
 }
