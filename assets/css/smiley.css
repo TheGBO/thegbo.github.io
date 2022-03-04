@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.face{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    animation: rot 9s linear infinite;
+}
+
+@keyframes rot {
+    0%{
+        transform: rotate3d(0,0,0,0deg);
+    }
+    100%{
+        transform: rotate3d(1,1,1,360deg);
+    }
+}
+
+.eyes{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 80px;
+    top: 90px;
+}
+
+.eye{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: cyan;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.cyan{
+    background-color: cyan;
+}
+
+.mouth{
+    position: absolute;
+    
+    width: 250px;
+    height: 120px;
+    left: 120px;
+    top: 250px;
+    border-bottom-right-radius: 9000px;
+    border-bottom-left-radius: 9000px;
+}
+
+.mouth2{
+    position: absolute;
+    background-color: black;
+    width: 230px;
+    height: 100px;
+    left: 130px;
+    top: 250px;
+    border-bottom-right-radius: 90000px;
+    border-bottom-left-radius: 90000px;
+}
