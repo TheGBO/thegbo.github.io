@@ -118,7 +118,12 @@ body{
     background: linear-gradient(to right, #00ffff8e,#66ff008e);
 }
 
-@media screen and (max-width:650px) {
+.img-wrp{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:850px) {
     .post-thumbnail{
         height: 50%;
         width: 50%;
