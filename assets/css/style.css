@@ -38,6 +38,16 @@ body{
     width: 250px;
     background: linear-gradient(to right, #ff7b005d,#ff7b0091);
     border-top-right-radius: 50px;
+    animation: navAnim 0.5s linear;
+}
+
+@keyframes navAnim{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .nav-link-label{
@@ -74,7 +84,19 @@ body{
     border-radius: 20px;
     overflow-y: auto;
     margin-bottom: 40px;
+    animation: flopAnim .5s linear;
+    
 }
+
+@keyframes flopAnim {
+    0%{
+        transform: rotate3d(1,0.5,0, 90deg);
+    }
+    100%{
+        transform: rotate3d(1,0,0, 0deg);
+    }
+}
+
 
 .post-content{
     display: flex;
