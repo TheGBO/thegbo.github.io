@@ -142,11 +142,12 @@ body{
         flex-direction: row;
         width: 100%;
         border-radius: 0;
-        height: 90px;
+        height: 110px;
         text-align: center;
         vertical-align: middle;
         border-bottom-right-radius: 60px;
         background: linear-gradient(to right, #ff7b00,#ff009d);
+        flex-wrap: wrap;
     }
     p a {
         font-size: 50px;
