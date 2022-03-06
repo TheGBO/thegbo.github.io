@@ -46,7 +46,7 @@ function fetchPosts(){
         let data = JSON.parse(xhr.response);
         console.log(data.data);
         data.data.map((val) => {
-            createPost(val.thumbnail, val.title, val.content.replace(/<[^>]*>?/gm, ''), val.id)
+            createPost(val.thumbnail, val.title, val.id)
         });
     }
 }
