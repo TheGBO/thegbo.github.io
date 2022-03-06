@@ -48,7 +48,7 @@ function fetchPosts(){
     xhr.onload = () => {
         let data = JSON.parse(xhr.response);
         console.log(data.data);
-        data.data.slice().reverse().map((val) => {
+        data.data.slice().reverse().foreach(val => {
             createPost(val.thumbnail, val.title, val.content.replace(/<[^>]*>?/gm, ''), val.id)
         });
     }
