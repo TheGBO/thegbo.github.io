@@ -12,10 +12,10 @@ function createPost(thumbnail, title, desc, url){
                     ${title}
                 </h1>
                 <p class="post-content">
-                    ${desc.substring(0,50)}
+                    ${desc.substring(0,33)}...
                 </p>
                 <p class="post-content">
-                    <a href="post.html?id=${url}">- Read Article -</a>
+                    <a href="post?id=${url}">- Read Article -</a>
                 </p>
             </div>
         </div>
@@ -46,7 +46,6 @@ function fetchPosts(){
     xhr.open('GET', apiURL)
     xhr.send(apiURL);
     xhr.onload = () => {
-        console.log(xhr.response);
         let data = JSON.parse(xhr.response);
         console.log(data.data);
         data.data.map((val) => {
@@ -61,7 +60,6 @@ function fetchSinglePost(id){
     xhr.open('GET', `${apiURL}/${id}`);
     xhr.send(apiURL);
     xhr.onload = () => {
-        console.log(xhr.response);
         let data = JSON.parse(xhr.response);
         console.log(data.data);
         let val = data.data;
