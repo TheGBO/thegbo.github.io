@@ -1,7 +1,7 @@
 const apiURL = "https://thegbo.herokuapp.com/api/post";
 const postContainer = document.getElementById("content-wrapper");
 
-function createPost(thumbnail, title, desc, url){
+function createPost(thumbnail, title, url){
     console.log(url);
     postContainer.innerHTML += `
     <article class="post dynamic-post">
@@ -11,9 +11,6 @@ function createPost(thumbnail, title, desc, url){
                 <h1 class="post-title">
                     ${title}
                 </h1>
-                <p class="post-content">
-                    ${desc.substring(0,33)}...
-                </p>
                 <p class="post-content">
                     <a href="post?id=${url}">- Read Article -</a>
                 </p>
