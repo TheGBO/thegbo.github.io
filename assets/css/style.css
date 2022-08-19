@@ -141,6 +141,11 @@ body{
     flex-direction: column;
 }
 
+.nav-title{
+    padding: 5px;
+    text-align: center;
+}
+
 @media screen and (max-width:850px) {
     .post-thumbnail{
         height: 50%;
