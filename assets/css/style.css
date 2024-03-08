@@ -32,7 +32,7 @@ img{
 }
 
 body{
-    background: linear-gradient(to right, #8c00ff,#4400ff);
+    background: #083F81;
     display: flex;
     flex-direction: row;
 }
@@ -41,7 +41,7 @@ body{
     position: fixed;
     height: 100vh;
     width: 250px;
-    background: linear-gradient(to right, #ff7b00,#ff7b0091);
+    background: #0B56B1;
     border-top-right-radius: 50px;
     animation: navAnim 0.5s linear;
 }
@@ -65,7 +65,7 @@ body{
 }
 
 .nav-link{
-    text-align: center;
+    text-align: left;
     padding: 13px;
 }
 
@@ -189,4 +189,8 @@ body{
         max-width: 100%;
     }
     
+}
+
+.platform-icon img{
+    height: 32pt;
 }
