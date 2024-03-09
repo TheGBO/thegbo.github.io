@@ -146,10 +146,14 @@ body{
     text-align: center;
 }
 
+.platform-icon img{
+    height: 32pt;
+}
+
 @media screen and (max-width:850px) {
     .post-thumbnail{
-        height: 50%;
-        width: 50%;
+        height: 30%;
+        width: 30%;
     }
     .post{
         flex-direction: column;
@@ -174,8 +178,16 @@ body{
         text-align: center;
         vertical-align: middle;
         border-bottom-right-radius: 60px;
-        background: linear-gradient(to right, #ff7b00,#ff009d);
         flex-wrap: wrap;
+    }
+    .nav-link{
+        text-align: center;
+    }
+    .nav-link-label{
+        font-size: 16px;
+    }
+    .platform-icon img{
+        height: 16pt;
     }
     p a {
         font-size: 20px;
@@ -188,9 +200,11 @@ body{
     .detailed-post .post-content img{
         max-width: 100%;
     }
-    
+    .post-title{
+        font-size: 16pt;
+    }
 }
 
-.platform-icon img{
-    height: 32pt;
+.nav-link{
+    border-right: #0073ff2a 2px solid;
 }
