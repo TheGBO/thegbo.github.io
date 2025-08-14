@@ -17,6 +17,17 @@ img{
     max-width: 100%;
 }
 
+.clickable{
+    background-color: rgb(247, 160, 79);
+    padding: 8pt;
+    border-radius: 15pt;
+    
+}
+.clickable:hover{
+    background-color: red;
+    transition: 0.25s
+}
+
 ::-webkit-scrollbar {
     scrollbar-color: rgb(0, 197, 211) #333;
     width: 10px; /* Mostly for vertical scrollbars */
