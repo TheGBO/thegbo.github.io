@@ -1,67 +1,33 @@
-const apiURL = "https://thegbo.herokuapp.com/api/post";
 const postContainer = document.getElementById("content-wrapper");
 
-function createPost(thumbnail, title, url){
-    console.log(url);
+const createPost = (title, badges, content, thumbnail, button) => {
+    var post = {
+        title: title,
+        badges: badges,
+        content: content,
+        thumbnail: thumbnail,
+        button: button,
+        hash: "null-hash"
+    }
+};
+
+function DisplayPost(post){
     postContainer.innerHTML += `
     <article class="post dynamic-post">
         <div class="post-content">
-            <img src="${thumbnail}" alt="" class="post-thumbnail">
+            <img src="${post.thumbnail}" alt="" class="post-thumbnail">
             <div class="post-text">
                 <h1 class="post-title">
-                    ${title}
+                    ${post.title}
                 </h1>
-                <p class="post-content">
-                    <a href="post?id=${url}">- Read Article -</a>
-                </p>
+                    <p class="post-content">
+                        ${post.content}
+                    </p>
+                    <p class="post-content" class="clickable">
+                        <a href="https://thegbo.github.io/Lowresnator/" class="clickable">Testar</a>
+                    </p>
             </div>
         </div>
     </article>
     `;
 }
-
-function createDetailedPost(thumbnail, title, desc){
-    postContainer.innerHTML += `
-    <article class="post dynamic-post detailed-post">
-            <div class="post-content">
-                <div class="post-text">
-                    <h1 class="post-title">
-                        ${title}
-                    </h1>
-                    <p class="post-content">
-                        ${desc}
-                    </p>
-                </div>
-            </div>
-        </article>
-    `;
-}
-
-function fetchPosts(){
-    let xhr = new XMLHttpRequest();
-
-    xhr.open('GET', apiURL)
-    xhr.send(apiURL);
-    xhr.onload = () => {
-        let data = JSON.parse(xhr.response);
-        console.log(data.data);
-        data.data.map((val) => {
-            createPost(val.thumbnail, val.title, val.id)
-        });
-    }
-}
-
-function fetchSinglePost(id){
-    let xhr = new XMLHttpRequest();
-
-    xhr.open('GET', `${apiURL}/${id}`);
-    xhr.send(apiURL);
-    xhr.onload = () => {
-        let data = JSON.parse(xhr.response);
-        console.log(data.data);
-        let val = data.data;
-        createDetailedPost(val.thumbnail, val.title, val.content)
-    }
-}
-
-console.log(window.location.hash.replace('#',""))

@@ -1,4 +1,4 @@
-fetch('./assets/components/nav.html')
+fetch('/assets/components/nav.html')
 .then(res => res.text())
 .then(text => {
     let oldelem = document.querySelector("script#replace_with_navbar");
