@@ -1,13 +1,84 @@
 [
     {
         "title": "Sandboxnator",
-        "badges": ["dekstop"],
+        "badges": [
+            "desktop"
+        ],
         "content": "Em breve... Jogo multijogador levemente parecido com minecraft porém com física.",
-        "thumbnail": "",
-        "button": 
-        {
-            "text":"",
-            "url":""
+        "thumbnail": "https://raw.githubusercontent.com/TheGBO/SandboxnatorReinassanceGodot/refs/heads/main/Assets/Textures/icon.png",
+        "button": {
+            "text": "Em breve...",
+            "url": ""
         }
+    },
+    {
+        "title": "Worminhoca",
+        "badges": [
+            "desktop",
+            "web"
+        ],
+        "content": "Jogo de plataforma.",
+        "thumbnail": "https://raw.githubusercontent.com/TheGBO/worminhoca/refs/heads/main/assets/worminhocalogo.png",
+        "button": {
+            "text": "Jogar",
+            "url": "https://thegbo.itch.io/worminhoca"
+        }
+    },
+    {
+        "title": "Super Simple Sandbox 2D",
+        "badges": [
+            "android"
+        ],
+        "content": "um jogo 2d de física, FORTEMENTE influenciado por people playground, mas me recuso a colocar qualquer palavra relacionada ao people playground, pois isso seria um bootleg muito feio e não gosto de copiar (na cara dura pelo menos :P).",
+        "thumbnail": "https://lh3.googleusercontent.com/lyeIr0TIFHf_h0_p-c-Ybu4IqkTCZIOUv_oRQe2o3DJU1UY5-qwBzHvbum50ZzNOGjc",
+        "button": {
+            "text": "Download",
+            "url": "https://play.google.com/store/apps/details?id=com.thegbostudio.SuperSimpleSandbox2D"
+        }
+    },
+    {
+        "title": "PressTheKey",
+        "badges": [
+            "web",
+            "desktop"
+        ],
+        "content": "uma espécie de jogo de ritmo ou algo assim, nem eu sei descrever como é",
+        "thumbnail": "/assets/img/thew.png",
+        "button": {
+            "text": "Jogar",
+            "url": "https://thegbo.github.io/PressTheKey/"
+        }
+    },
+    {
+        "title": "Whack a div 2",
+        "badges": [
+            "web",
+            "android",
+            "desktop"
+        ],
+        "content": "Continuação do jogo Whack a div, que nessa versão deveria se chamar whack a canvas.",
+        "thumbnail": "https://github.com/TheGBO/whack-a-div-2/blob/main/favicon.png?raw=true",
+        "button": {
+            "text": "Jogar",
+            "url": "https://thegbo.github.io/whack-a-div-2/"
+        }
+    },
+    {
+        "title": "Fish Spinner",
+        "badges": [
+            "android"
+        ],
+        "content": "Ainda tenho o código fonte (talvez) disponível em breve",
+        "thumbnail": "https://lh3.googleusercontent.com/KBkrmgNe7ZRh5OHqz_1i5khPUo7XEWq1knhuf0zOzzFF3Buwt5zqNP0WpJr9iDtRcDA",
+        "button": null
+    },
+    {
+        "title": "Merciless Randomness",
+        "badges": [
+            "android"
+        ],
+        "content": "Ainda tenho o código fonte (talvez) disponível em breve",
+        "thumbnail": "https://lh3.googleusercontent.com/rzPB0JPlpKUb-cNjFm8JqJ2Ab6kVOv6DVVCtqjFH51ipZ9IgKDsyKiOjnY-EuLgP5SYQ",
+        "button": null
     }
 ]
