@@ -1,0 +1,17 @@
+.card {
+    border-right: 3px solid #818181;
+    border-bottom: 3px solid #818181;
+    border-left: 3px solid #fdffff;
+    border-top: 3px solid #fdffff;
+    padding: 8px;
+    margin: 16px;
+    background-color: #c3c3c3;
+}
+
+.card-title {
+    border-bottom: 2px black solid;
+    width: 100%;
+    background-color: #07147C;
+    color: #fdffff;
+    padding: 4px;
+}
