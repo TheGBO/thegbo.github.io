@@ -4,15 +4,28 @@
     box-sizing: border-box;
 }
 
+* {
+    font-family: Tahoma, 'Trebuchet MS', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --default-text: #0c0c0c;
+
+
+}
+
 html {
     font-family: system-ui, sans-serif;
     line-height: 1.6;
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
     margin: 0;
-    color: #000000;
-    background-color: teal;
+    color: var(--default-text);
+    background: #275DE3;
+    background: linear-gradient(182deg, rgba(39, 93, 227, 1) 0%, rgba(131, 175, 240, 1) 68%, rgba(172, 206, 243, 1) 100%);
 }
 
 img {
@@ -23,3 +36,4 @@ img {
 ul {
     padding-left: 1.2rem;
 }
+
