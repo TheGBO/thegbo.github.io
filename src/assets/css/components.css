@@ -1,3 +1,5 @@
+
+/* Credits to xp.css for these colors, I was considering to import it, but I want more control xdxd */
 :root {
     --card-bg: #EEECDB;
     --card-detail: #cbc6b4;
@@ -10,6 +12,16 @@
     --clickable-item-border: 1px solid #003c74;
     --clickable-item-font-size: 11pt;
     --clickable-item-border-radius: 4pt;
+
+    --bar-gradient: linear-gradient(180deg,
+            rgba(9, 151, 255, 1) 0%,
+            rgba(0, 83, 238, 1) 8%,
+            rgba(0, 80, 238, 1) 40%,
+            rgba(0, 102, 255, 1) 88%,
+            rgba(0, 102, 255, 1) 93%,
+            rgba(0, 91, 255, 1) 95%,
+            rgba(0, 61, 215, 1) 96%,
+            rgba(0, 61, 215, 1) 100%);
 }
 
 .card {
@@ -26,16 +38,7 @@
 .card-title-wrapper {
     border-radius: 5pt;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg,
-            rgba(9, 151, 255, 1) 0%,
-            rgba(0, 83, 238, 1) 8%,
-            rgba(0, 80, 238, 1) 40%,
-            rgba(0, 102, 255, 1) 88%,
-            rgba(0, 102, 255, 1) 93%,
-            rgba(0, 91, 255, 1) 95%,
-            rgba(0, 61, 215, 1) 96%,
-            rgba(0, 61, 215, 1) 100%);
+    background: var(--bar-gradient);
     color: #fdffff;
     margin: 0;
     padding: 8pt;
@@ -56,7 +59,8 @@
     max-width: 32pt;
     align-self: center;
     margin: 8pt;
-    height: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .card-main {
@@ -75,6 +79,7 @@
 
 .clickable-item:hover {
     box-shadow: inset -1px 1px #fff0cf, inset 1px 2px #fdd889, inset -2px 2px #fbc761, inset 2px -2px #e5a01a;
+    cursor: pointer;
 }
 
 .clickable-item:active {
@@ -84,4 +89,15 @@
             rgba(227, 227, 219, 1) 8%,
             rgba(229, 229, 222, 1) 94%,
             rgba(242, 242, 241, 1) 100%);
+}
+
+.nav-bar{
+    height: 100vh;
+    margin: 0;
+    width: 16vw;
+}
+
+.main-content{
+    width: 100%;
+    height: 100%;
 }

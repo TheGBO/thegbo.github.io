@@ -28,12 +28,18 @@ body {
     background: linear-gradient(182deg, rgba(39, 93, 227, 1) 0%, rgba(131, 175, 240, 1) 68%, rgba(172, 206, 243, 1) 100%);
 }
 
-img {
-    max-width: 100%;
-    display: block;
-}
-
 ul {
     padding-left: 1.2rem;
 }
 
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.page{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}

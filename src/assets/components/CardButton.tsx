@@ -1,9 +1,9 @@
-type CardButtonProps = {
+export type ButtonItem = {
     icon: string;
     label: string;
 };
 
-export function CardButton({ icon, label }: CardButtonProps) {
+export function CardButton({ icon, label }: ButtonItem) {
     return (
         <button className="clickable-item">
             <div className="icon-and-text">

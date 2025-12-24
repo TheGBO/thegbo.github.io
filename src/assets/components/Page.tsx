@@ -1,9 +1,19 @@
-import { Card } from "./Card";
+import { BaseCard } from "./BaseCard";
+import { NavigationCard } from "./NavigationCard";
+import myMusic from "../img/My Music.png";
 
 export function Page() {
     return (
         <main className="page">
-            <Card />
+            <NavigationCard/>
+            <div className="main-content">
+                <BaseCard title="hfgasdf" icon={myMusic}>
+                    <p>
+                        adfaqfgwrghaerhs
+                    </p>
+                </BaseCard>
+            </div>
         </main>
+
     );
 }
